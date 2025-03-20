@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "npm run hugo"
+  },
   "devDependencies": {
     "hugo-extended": "0.145.0"
   }
