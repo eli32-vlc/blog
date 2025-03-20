@@ -1,399 +1,400 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en-us"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts | Eason Li</title>
+
+    
+
+<link rel="canonical" href="http://localhost:1313/posts/" />
+
+
+
+<meta name="author" content="map[name:Junyi]" />
+<meta name="description" content="" />
+
+
+<meta name="keywords" content="">
+
+
+
+<meta name="generator" content="Hugo 0.145.0">
+
+
+<meta property="og:url" content="http://localhost:1313/posts/">
+  <meta property="og:site_name" content="Eason Li">
+  <meta property="og:title" content="Posts">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
 
 
 
 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Posts">
 
 
 
 
+<link rel="stylesheet" href="/css/output.css" />
 
 
 
 
+     
 
+    
 
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
 
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<html
-  class="not-ready lg:text-base"
-  style="--bg: #faf8f1"
-  lang="en-us"
->
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
-
-  
-  <title>Posts - Eason Li</title>
-
-  
-  <meta name="theme-color" />
-
-  
-  
-  
-  
-  
-  <meta
-    name="description"
-    content="A personal blog"
-  />
-  <meta name="author" content="Eason Li" />
-  
+    
+<nav class="mt-4 lg:mt-8 py-4">
 
   
+  <div class="container flex justify-between px-4">
   
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/" alt="" />
+        </div>
+      </div>
+
+      
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
+
+      
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+
+<div class="mt-8 lg:mt-12 px-4">
+  <div class="mx-auto prose dark:prose-invert">
+    <h1 class="text-3xl">
+      Posts
+    </h1>
+    
+  </div>
+
+  <div class="max-w-[65ch] mx-auto mt-8 lg:mt-12">
+    <ul class="timeline timeline-vertical">
+      
+      
+      <li class="[--timeline-col-start:64px]">
+        <hr class="dark:bg-base-content" />
+        <div class="timeline-start !justify-self-start">
+          <div class="text-lg font-semibold">2024</div>
+        </div>
+        <div class="timeline-middle flex items-center mx-8 my-2">
+          <ion-icon name="time"></ion-icon>
+        </div>
+        <div class="timeline-end timeline-box dark:border-base-content/60 prose dark:prose-invert my-8">
+          <ul>
+            
+            <li>
+              <a href="/posts/moving-away-from-github-pages-to-cloudflare-pages/">Moving away from Github Pages to Cloudflare Pages</a>
+            </li>
+            
+            <li>
+              <a href="/posts/how-to-build-a-simple-website-with-hugo/">How To Build A Simple Website With Hugo</a>
+            </li>
+            
+            <li>
+              <a href="/posts/random-word-api/">Random Word API</a>
+            </li>
+            
+            <li>
+              <a href="/posts/how-i-created-a-simple-python-api-for-generating-random-word/">How I Created A Simple Python API For Generating Random Word</a>
+            </li>
+            
+            <li>
+              <a href="/posts/spice-up-your-terminal-with-oh-my-zsh/">Spice Up Your Terminal With Oh My Zsh</a>
+            </li>
+            
+            <li>
+              <a href="/posts/how-to-setup-a-free-wordpress-website-with-infinityfree/">How To Setup A Free Wordpress Website With Infinityfree</a>
+            </li>
+            
+            <li>
+              <a href="/posts/effortlessly-manage-docker-with-portainer-a-step-by-step-guide/">Effortlessly Manage Docker With Portainer: A Step by Step Guide</a>
+            </li>
+            
+          </ul>
+        </div>
+        <hr class="dark:bg-base-content" />
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
   
+  <p>© 2025 Eason Li</p>
   
-  
-  
-  <link rel="preload stylesheet" as="style" href="https://blog.eason.fr.to/main.min.css" />
 
   
-  
-  
-  
-  
-  <link rel="preload" as="image" href="https://blog.eason.fr.to/theme.png" />
-
-  
-  
-  
-  
-  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/2b69b0fad4032dbef5cef82772fe16de?s=160&amp;d=identicon" />
-  
-  
-
-  
-  
-  <link rel="preload" as="image" href="https://blog.eason.fr.to/twitter.svg" />
-  
-  <link rel="preload" as="image" href="https://blog.eason.fr.to/github.svg" />
-  
-  
-
-  
-  
-
-  
-  
-  
-
-  
-  <link rel="icon" href="https://blog.eason.fr.to/favicon.ico" />
-  <link rel="apple-touch-icon" href="https://blog.eason.fr.to/apple-touch-icon.png" />
-
-  
-  <meta name="generator" content="Hugo 0.124.1">
-
-  
-  
-  
-  
-  
-  <meta itemprop="name" content="Posts">
-<meta itemprop="description" content="">
-  
-  <meta property="og:title" content="Posts" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://blog.eason.fr.to/posts/" />
-
-  
-  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Posts"/>
-<meta name="twitter:description" content=""/>
-
-  
-  
-  <link
-    rel="alternate"
-    type="application/rss&#43;xml"
-    href="https://blog.eason.fr.to/posts/index.xml"
-    title="Eason Li"
-  />
-  
-  
-  <link rel="canonical" href="https://blog.eason.fr.to/posts/" />
-  
-  
-</head>
-
-  <body class="text-black duration-200 ease-out dark:text-white">
-    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
-  <div class="relative z-50 mr-auto flex items-center">
-    <a
-      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
-      href="https://blog.eason.fr.to/"
-      >Eason Li</a
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
     >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
     <div
-      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
       role="button"
-      aria-label="Dark"
-    ></div>
-  </div>
-
-  <div
-    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
-    role="button"
-    aria-label="Menu"
-  ></div>
-
-  
-
-  <script>
-    
-    const htmlClass = document.documentElement.classList;
-    setTimeout(() => {
-      htmlClass.remove('not-ready');
-    }, 10);
-
-    
-    const btnMenu = document.querySelector('.btn-menu');
-    btnMenu.addEventListener('click', () => {
-      htmlClass.toggle('open');
-    });
-
-    
-    const metaTheme = document.querySelector('meta[name="theme-color"]');
-    const lightBg = '#faf8f1'.replace(/"/g, '');
-    const setDark = (isDark) => {
-      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
-      htmlClass[isDark ? 'add' : 'remove']('dark');
-      localStorage.setItem('dark', isDark);
-    };
-
-    
-    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    if (htmlClass.contains('dark')) {
-      setDark(true);
-    } else {
-      const darkVal = localStorage.getItem('dark');
-      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
-    }
-
-    
-    darkScheme.addEventListener('change', (event) => {
-      setDark(event.matches);
-    });
-
-    
-    const btnDark = document.querySelector('.btn-dark');
-    btnDark.addEventListener('click', () => {
-      setDark(localStorage.getItem('dark') !== 'true');
-    });
-  </script>
-
-  <div
-    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
-  >
-    
-    
-
-    
-    <nav
-      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
     >
-      
-      <a
-        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
-        style="--url: url(./twitter.svg)"
-        href="https://twitter.com/404"
-        target="_blank"
-        rel="me"
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
       >
-        twitter
-      </a>
-      
-      <a
-        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
-        style="--url: url(./github.svg)"
-        href="https://github.com/eli32-vlc"
-        target="_blank"
-        rel="me"
-      >
-        github
-      </a>
-      
-    </nav>
-    
-  </div>
-</header>
+      </ion-icon>
+    </div>
+  </template>
+</div>
 
-
-    <main
-      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
-    >
-      
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Redesigning SchoolBox</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Apr 20, 2024</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://blog.eason.fr.to/posts/redesigning-schoolbox/">Redesigning SchoolBox</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Moving away from Github Pages to Cloudflare Pages</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Apr 17, 2024</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://blog.eason.fr.to/posts/moving-away-from-github-pages-to-cloudflare-pages/">Moving away from Github Pages to Cloudflare Pages</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">How To Build A Simple Website With Hugo</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Apr 16, 2024</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://blog.eason.fr.to/posts/how-to-build-a-simple-website-with-hugo/">How To Build A Simple Website With Hugo</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">How I Created A Simple Python API For Generating Random Word</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Apr 15, 2024</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://blog.eason.fr.to/posts/how-i-created-a-simple-python-api-for-generating-random-word/">How I Created A Simple Python API For Generating Random Word</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Random Word API</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Apr 15, 2024</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://blog.eason.fr.to/posts/random-word-api/">Random Word API</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Effortlessly Manage Docker With Portainer: A Step by Step Guide</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Apr 14, 2024</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://blog.eason.fr.to/posts/effortlessly-manage-docker-with-portainer-a-step-by-step-guide/">Effortlessly Manage Docker With Portainer: A Step by Step Guide</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">How To Setup A Free Wordpress Website With Infinityfree</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Apr 14, 2024</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://blog.eason.fr.to/posts/how-to-setup-a-free-wordpress-website-with-infinityfree/">How To Setup A Free Wordpress Website With Infinityfree</a>
-</section>
-
-
-
-
-
-<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
-  
-  <h2 class="!my-0 pb-1 font-bold !leading-none">Spice Up Your Terminal With Oh My Zsh</h2>
-  <time class="text-sm antialiased opacity-60"
-    >Apr 14, 2024</time
-  >
-  <a class="absolute inset-0 text-[0]" href="https://blog.eason.fr.to/posts/spice-up-your-terminal-with-oh-my-zsh/">Spice Up Your Terminal With Oh My Zsh</a>
-</section>
-
-
-
-
-
-
-    </main>
-
-    <footer
-  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
->
-  <div class="mr-auto">
-    &copy; 2024
-    <a class="link" href="https://blog.eason.fr.to/">Eason Li</a>
-  </div>
-  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
-    >Powered by Hugo️️</a
-  >️
-  <a
-    class="link"
-    href="https://github.com/nanxiaobei/hugo-paper"
-    rel="noopener"
-    target="_blank"
-    >✎ Paper</a
-  >
 </footer>
 
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2025 Eason Li</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme =  null 
+  window.darkTheme =  null 
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+     
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

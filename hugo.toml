@@ -1,13 +1,26 @@
 baseURL = 'https://blog.eason.fr.to/'
 languageCode = 'en-us'
-title = 'Eason Li'
-theme = "paper"
+title = 'Zenith Rifle'
+theme = "lightbi-hugo"
 disqusShortname = 'easonli'
 enableRobotsTXT = true
 
-[params]
-  avatar = 'lyu63651@gmail.com'
-  name = 'Eason Li'
-  bio = 'Writer'
-  twitter = '404'
-  github = 'eli32-vlc'
+
+
+[Params.Author]
+  name = "Zenith Rifle"
+  authorInfo = "Nerdy teenager."
+  email = "first@sharecrypt.uk"
+  github = "eli32-vlc"
+
+
+dateFormat = "02 January 2006"
+
+
+description="Zenith's blog."
+
+
+showPostImage = true
+
+
+rss = true

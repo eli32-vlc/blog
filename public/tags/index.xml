@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Eason Li</title>
-    <link>https://blog.eason.fr.to/tags/</link>
-    <description>Recent content in Tags on Eason Li</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Tags on Zenith Rifle</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Zenith Rifle</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://blog.eason.fr.to/tags/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>first@sharecrypt.uk (Zenith Rifle)</managingEditor>
+    <webMaster>first@sharecrypt.uk (Zenith Rifle)</webMaster>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

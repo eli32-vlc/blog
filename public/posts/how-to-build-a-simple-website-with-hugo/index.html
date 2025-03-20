@@ -1,285 +1,308 @@
-<!doctype html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<html
-  class="not-ready lg:text-base"
-  style="--bg: #faf8f1"
-  lang="en-us"
->
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
-
-  
-  <title>How To Build A Simple Website With Hugo - Eason Li</title>
-
-  
-  <meta name="theme-color" />
-
-  
-  
-  
-  
-  <meta name="description" content="Introduction In this blog post, I&rsquo;ll demonstrate how to construct a basic website using Hugo. For those unfamiliar, Hugo is a static site generator written in Go, known for its speed and user-friendliness. It&rsquo;s versatile enough to create anything from straightforward blogs to intricate websites. As an example, this very blog post you&rsquo;re reading is crafted using Hugo with the Paper theme.
-Prerequisites Before we dive in, ensure you have the following:" />
-  <meta name="author" content="Eason Li" />
-  
-
-  
-  
-  
-  
-  
-  
-  <link rel="preload stylesheet" as="style" href="https://blog.eason.fr.to/main.min.css" />
-
-  
-  
-  
-  
-  
-  <link rel="preload" as="image" href="https://blog.eason.fr.to/theme.png" />
-
-  
-  
-  
-  
-  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/2b69b0fad4032dbef5cef82772fe16de?s=160&amp;d=identicon" />
-  
-  
-
-  
-  
-  <link rel="preload" as="image" href="https://blog.eason.fr.to/twitter.svg" />
-  
-  <link rel="preload" as="image" href="https://blog.eason.fr.to/github.svg" />
-  
-  
-
-  
-  
-  <script
-    defer
-    src="https://blog.eason.fr.to/highlight.min.js"
-    onload="hljs.initHighlightingOnLoad();"
-  ></script>
-  
-
-  
-  
-  
-
-  
-  <link rel="icon" href="https://blog.eason.fr.to/favicon.ico" />
-  <link rel="apple-touch-icon" href="https://blog.eason.fr.to/apple-touch-icon.png" />
-
-  
-  <meta name="generator" content="Hugo 0.124.1">
-
-  
-  
-  
-  
-  
-  <meta itemprop="name" content="How To Build A Simple Website With Hugo">
-<meta itemprop="description" content="Introduction In this blog post, I&rsquo;ll demonstrate how to construct a basic website using Hugo. For those unfamiliar, Hugo is a static site generator written in Go, known for its speed and user-friendliness. It&rsquo;s versatile enough to create anything from straightforward blogs to intricate websites. As an example, this very blog post you&rsquo;re reading is crafted using Hugo with the Paper theme.
-Prerequisites Before we dive in, ensure you have the following:"><meta itemprop="datePublished" content="2024-04-16T13:02:04+10:00" />
-<meta itemprop="dateModified" content="2024-04-16T13:02:04+10:00" />
-<meta itemprop="wordCount" content="552">
-<meta itemprop="keywords" content="" />
-  
-  <meta property="og:title" content="How To Build A Simple Website With Hugo" />
-<meta property="og:description" content="Introduction In this blog post, I&rsquo;ll demonstrate how to construct a basic website using Hugo. For those unfamiliar, Hugo is a static site generator written in Go, known for its speed and user-friendliness. It&rsquo;s versatile enough to create anything from straightforward blogs to intricate websites. As an example, this very blog post you&rsquo;re reading is crafted using Hugo with the Paper theme.
-Prerequisites Before we dive in, ensure you have the following:" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.eason.fr.to/posts/how-to-build-a-simple-website-with-hugo/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-04-16T13:02:04+10:00" />
-<meta property="article:modified_time" content="2024-04-16T13:02:04+10:00" />
-
-  
-  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="How To Build A Simple Website With Hugo"/>
-<meta name="twitter:description" content="Introduction In this blog post, I&rsquo;ll demonstrate how to construct a basic website using Hugo. For those unfamiliar, Hugo is a static site generator written in Go, known for its speed and user-friendliness. It&rsquo;s versatile enough to create anything from straightforward blogs to intricate websites. As an example, this very blog post you&rsquo;re reading is crafted using Hugo with the Paper theme.
-Prerequisites Before we dive in, ensure you have the following:"/>
-
-  
-  
-  
-  <link rel="canonical" href="https://blog.eason.fr.to/posts/how-to-build-a-simple-website-with-hugo/" />
-  
-  
-</head>
-
-  <body class="text-black duration-200 ease-out dark:text-white">
-    <header class="mx-auto flex h-[4.5rem] max-w-3xl px-8 lg:justify-center">
-  <div class="relative z-50 mr-auto flex items-center">
-    <a
-      class="-translate-x-[1px] -translate-y-[1px] text-2xl font-semibold"
-      href="https://blog.eason.fr.to/"
-      >Eason Li</a
-    >
-    <div
-      class="btn-dark text-[0] ml-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
-      role="button"
-      aria-label="Dark"
-    ></div>
-  </div>
-
-  <div
-    class="btn-menu relative z-50 -mr-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
-    role="button"
-    aria-label="Menu"
-  ></div>
-
-  
-
-  <script>
-    
-    const htmlClass = document.documentElement.classList;
-    setTimeout(() => {
-      htmlClass.remove('not-ready');
-    }, 10);
+<!DOCTYPE html>
+<html lang="en-us"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How To Build A Simple Website With Hugo | Eason Li</title>
 
     
-    const btnMenu = document.querySelector('.btn-menu');
-    btnMenu.addEventListener('click', () => {
-      htmlClass.toggle('open');
-    });
+
+<link rel="canonical" href="http://localhost:1313/posts/how-to-build-a-simple-website-with-hugo/" />
+
+
+
+<meta name="author" content="Eason Li" />
+<meta name="description" content="Introduction In this blog post, I&rsquo;ll demonstrate how to construct a basic website using Hugo. For those unfamiliar, Hugo is a static site generator written in Go, known for its speed and user-friendliness. It&rsquo;s versatile enough to create anything from straightforward blogs to intricate websites. As an example, this very blog post you&rsquo;re reading is crafted using Hugo with the Paper theme.
+Prerequisites Before we dive in, ensure you have the following:
+" />
+
+
+<meta name="keywords" content="">
+
+
+
+<meta name="generator" content="Hugo 0.145.0">
+
+
+<meta property="og:url" content="http://localhost:1313/posts/how-to-build-a-simple-website-with-hugo/">
+  <meta property="og:site_name" content="Eason Li">
+  <meta property="og:title" content="How To Build A Simple Website With Hugo">
+  <meta property="og:description" content="Introduction In this blog post, I’ll demonstrate how to construct a basic website using Hugo. For those unfamiliar, Hugo is a static site generator written in Go, known for its speed and user-friendliness. It’s versatile enough to create anything from straightforward blogs to intricate websites. As an example, this very blog post you’re reading is crafted using Hugo with the Paper theme.
+Prerequisites Before we dive in, ensure you have the following:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-04-16T13:02:04+10:00">
+    <meta property="article:modified_time" content="2024-04-16T13:02:04+10:00">
+
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How To Build A Simple Website With Hugo">
+  <meta name="twitter:description" content="Introduction In this blog post, I’ll demonstrate how to construct a basic website using Hugo. For those unfamiliar, Hugo is a static site generator written in Go, known for its speed and user-friendliness. It’s versatile enough to create anything from straightforward blogs to intricate websites. As an example, this very blog post you’re reading is crafted using Hugo with the Paper theme.
+Prerequisites Before we dive in, ensure you have the following:">
+
+
+
+
+<link rel="stylesheet" href="/css/output.css" />
+
+
+
 
     
-    const metaTheme = document.querySelector('meta[name="theme-color"]');
-    const lightBg = '#faf8f1'.replace(/"/g, '');
-    const setDark = (isDark) => {
-      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
-      htmlClass[isDark ? 'add' : 'remove']('dark');
-      localStorage.setItem('dark', isDark);
-    };
+
+
+<style>
+  pre {
+    padding: 1em;
+    overflow: auto;
+  }
+</style>
+
+
+
+
+
+
+
+
 
     
-    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    if (htmlClass.contains('dark')) {
-      setDark(true);
-    } else {
-      const darkVal = localStorage.getItem('dark');
-      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
-    }
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
 
     
-    darkScheme.addEventListener('change', (event) => {
-      setDark(event.matches);
-    });
+<nav class="mt-4 lg:mt-8 py-4">
 
-    
-    const btnDark = document.querySelector('.btn-dark');
-    btnDark.addEventListener('click', () => {
-      setDark(localStorage.getItem('dark') !== 'true');
-    });
-  </script>
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/" alt="" />
+        </div>
+      </div>
 
-  <div
-    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
-  >
-    
-    
-
-    
-    <nav
-      class="mt-12 flex justify-center space-x-10 dark:invert lg:ml-12 lg:mt-0 lg:items-center lg:space-x-6"
-    >
       
-      <a
-        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
-        style="--url: url(./twitter.svg)"
-        href="https://twitter.com/404"
-        target="_blank"
-        rel="me"
-      >
-        twitter
-      </a>
-      
-      <a
-        class="h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
-        style="--url: url(./github.svg)"
-        href="https://github.com/eli32-vlc"
-        target="_blank"
-        rel="me"
-      >
-        github
-      </a>
-      
-    </nav>
-    
-  </div>
-</header>
+    </section>
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-[1] shadow-md">
+        
 
 
-    <main
-      class="prose prose-neutral relative mx-auto min-h-[calc(100%-9rem)] max-w-3xl px-8 pb-16 pt-12 dark:prose-invert"
-    >
-      
 
-<article>
-  <header class="mb-16">
-    <h1 class="!my-0 pb-2.5">How To Build A Simple Website With Hugo</h1>
 
-    
-    <div class="text-sm antialiased opacity-60">
-      
-      <time>Apr 16, 2024</time>
-      
-      
-      
-      
-      <span class="mx-1">&middot;</span>
-      <span>Eason Li</span>
-      
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
     </div>
-    
-  </header>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+      
 
-  <section><h3 id="introduction">Introduction</h3>
+      
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+      
+<a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="/posts" title="Archives">
+  <ion-icon class="group-hover:text-primary-content" name="archive"></ion-icon>
+</a>
+
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+
+      
+
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="How To Build A Simple Website With Hugo">
+  <meta itemprop="description" content="Introduction In this blog post, I’ll demonstrate how to construct a basic website using Hugo. For those unfamiliar, Hugo is a static site generator written in Go, known for its speed and user-friendliness. It’s versatile enough to create anything from straightforward blogs to intricate websites. As an example, this very blog post you’re reading is crafted using Hugo with the Paper theme.
+Prerequisites Before we dive in, ensure you have the following:">
+  <meta itemprop="datePublished" content="2024-04-16T13:02:04+10:00">
+  <meta itemprop="dateModified" content="2024-04-16T13:02:04+10:00">
+  <meta itemprop="wordCount" content="552">
+
+      <header>
+        <h1 itemprop="headline">How To Build A Simple Website With Hugo</h1>
+        <p class="text-sm">
+          
+            Tuesday, Apr 16, 2024
+          
+
+          | <span>3 minute read</span>
+
+          
+          | <span>Updated at
+            
+              Tuesday, Apr 16, 2024
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            <div class="flex items-center">
+  
+  <span>@</span>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Eason Li</span>
+    
+  
+  </span>
+</div>
+
+          
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=How%20To%20Build%20A%20Simple%20Website%20With%20Hugo&amp;url=http://localhost:1313/posts/how-to-build-a-simple-website-with-hugo/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/how-to-build-a-simple-website-with-hugo/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=How%20To%20Build%20A%20Simple%20Website%20With%20Hugo%20http://localhost:1313/posts/how-to-build-a-simple-website-with-hugo/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+        
+
+        <h3 id="introduction">Introduction</h3>
 <p>In this blog post, I&rsquo;ll demonstrate how to construct a basic website using Hugo. For those unfamiliar, Hugo is a static site generator written in Go, known for its speed and user-friendliness. It&rsquo;s versatile enough to create anything from straightforward blogs to intricate websites. As an example, this very blog post you&rsquo;re reading is crafted using Hugo with the Paper theme.</p>
 <h3 id="prerequisites">Prerequisites</h3>
 <p>Before we dive in, ensure you have the following:</p>
@@ -291,123 +314,278 @@ Prerequisites Before we dive in, ensure you have the following:"/>
 <h3 id="step-1-install-hugo">Step 1: Install Hugo</h3>
 <p>First, you&rsquo;ll need to install Hugo using a package manager like Brew or Apt.</p>
 <h5 id="macos">macOS</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>brew install hugo
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>brew install hugo
 </span></span></code></pre></div><h5 id="ubuntudebian">Ubuntu/Debian</h5>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt install hugo
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo apt install hugo
 </span></span></code></pre></div><h3 id="step-2-choose-a-theme">Step 2: Choose A Theme</h3>
 <p>Head over to the Hugo website and select a theme. Opt for one with comprehensive documentation and preferably dark mode support. For this demonstration, I&rsquo;ll use the Gokarna theme.</p>
 <h3 id="step-3-create-a-new-site">Step 3: Create A New Site</h3>
 <h4 id="initialize-a-new-site-with-the-following-command">Initialize a new site with the following command:</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site sitename
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new site sitename
 </span></span></code></pre></div><h4 id="navigate-to-the-new-site-directory">Navigate to the new site directory:</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cd sitename
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#ff5c57">cd</span> sitename
 </span></span></code></pre></div><h3 id="step-4-setup-git">Step 4: Setup Git</h3>
 <p>Git setup is essential for deploying your website to GitHub and utilizing themes.</p>
 <h4 id="initialize-a-new-git-repository">Initialize a new Git repository:</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git init
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git init
 </span></span></code></pre></div><h3 id="step-5-add-a-theme">Step 5: Add A Theme</h3>
 <p>Refer to the official documentation of your chosen theme and follow the instructions to integrate it into your website, usually done as a Git submodule.</p>
 <h4 id="add-the-theme-as-a-git-submodule">Add the theme as a Git submodule:</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git submodule add https://github.com/526avijitgupta/gokarna.git themes/gokarna
-</span></span></code></pre></div><blockquote>
-<p>Ensure you replace the Git command with the one specified in the theme&rsquo;s documentation.</p>
-</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git submodule add https://github.com/526avijitgupta/gokarna.git themes/gokarna
+</span></span></code></pre></div>
+
+
+  <blockquote>
+    <p>Ensure you replace the Git command with the one specified in the theme&rsquo;s documentation.</p>
+  </blockquote>
+
 <h3 id="step-6-setup-hugo">Step 6: Setup Hugo</h3>
 <p>First, open the folder in a text/code editor and locate the hugo.toml file. You&rsquo;ll find something like this:</p>
 <p><img src="https://i.ibb.co/TmvVfMx/Xnip2024-04-16-18-37-35.jpg" alt="config.toml"></p>
 <p>Begin by adjusting your site title. Then, add the theme by including the following line:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;gokarna&#34;</span>
-</span></span></code></pre></div><blockquote>
-<p>Replace &ldquo;gokarna&rdquo; with the name of your theme.</p>
-</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>theme = <span style="color:#5af78e">&#34;gokarna&#34;</span>
+</span></span></code></pre></div>
+
+
+  <blockquote>
+    <p>Replace &ldquo;gokarna&rdquo; with the name of your theme.</p>
+  </blockquote>
+
 <h4 id="start-the-hugo-server">Start the Hugo server:</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo server
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo server
 </span></span></code></pre></div><p>Open the URL displayed in the terminal to view your website.</p>
 <p>Now, customize your website following the theme documentation. Since every site is unique, I can&rsquo;t provide exact customization instructions, but you can always seek assistance in the theme&rsquo;s GitHub repository.</p>
 <h3 id="step-7-add-content-optional">Step 7: Add Content (optional)</h3>
 <p>Assuming you&rsquo;re using this website for blogging purposes, follow these steps. To add a new blog post, create a new folder in the content directory called &ldquo;posts.&rdquo; Then, create a new Markdown file with the post&rsquo;s name. Insert the following text into the file:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>+++
+<div class="highlight"><pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>+++
 </span></span><span style="display:flex;"><span>title = &#39;Title&#39;
 </span></span><span style="display:flex;"><span>date = 2024-04-15T13:02:04+10:00
 </span></span><span style="display:flex;"><span>draft = false
 </span></span><span style="display:flex;"><span>+++
-</span></span></code></pre></div><blockquote>
-<p>Replace &ldquo;Title&rdquo; with your post&rsquo;s title and adjust the date accordingly. You can also change &ldquo;draft&rdquo; to true if you don&rsquo;t wish to publish the post yet.</p>
-</blockquote>
+</span></span></code></pre></div>
+
+
+  <blockquote>
+    <p>Replace &ldquo;Title&rdquo; with your post&rsquo;s title and adjust the date accordingly. You can also change &ldquo;draft&rdquo; to true if you don&rsquo;t wish to publish the post yet.</p>
+  </blockquote>
+
 <p>Next, add your content below the front matter. You can utilize Markdown to format your content.</p>
 <h3 id="step-8-deploy-your-website">Step 8: Deploy Your Website</h3>
 <p>Once satisfied with your website, deploy it to GitHub. Begin by creating a new repository on GitHub, then push your website to the repository. GitHub provides guidance on committing and pushing your code to the repository when you first create it. After pushing your website to GitHub, enable GitHub Actions with the Hugo template. Proceed to your repository settings and enable GitHub Pages, selecting GitHub Actions. Allow a few minutes for the website to deploy.</p>
 <p>Thank you for reading! I hope you found this blog post helpful. Best of luck with your website!</p>
-</section>
-
-  
-  
-
-  
-  
-  
-  
-  <nav class="mt-24 flex rounded-lg bg-black/[3%] text-lg dark:bg-white/[8%]">
-    
-    <a
-      class="flex w-1/2 items-center rounded-l-md p-6 pr-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://blog.eason.fr.to/posts/moving-away-from-github-pages-to-cloudflare-pages/"
-      ><span class="mr-1.5">←</span><span>Moving away from Github Pages to Cloudflare Pages</span></a
-    >
-    
-    
-    <a
-      class="ml-auto flex w-1/2 items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline hover:bg-black/[2%] dark:hover:bg-white/[3%]"
-      href="https://blog.eason.fr.to/posts/how-i-created-a-simple-python-api-for-generating-random-word/"
-      ><span>How I Created A Simple Python API For Generating Random Word</span><span class="ml-1.5">→</span></a
-    >
-    
-  </nav>
-  
-  
-
-  
-  
-  <div class="mt-24" id="disqus_thread"></div>
-  <script>
-    const disqusShortname = 'easonli';
-    const script = document.createElement('script');
-    script.src = 'https://' + disqusShortname + '.disqus.com/embed.js';
-    script.setAttribute('data-timestamp', +new Date());
-    document.head.appendChild(script);
-  </script>
-  
-
-  
-  
-
-  
 
 
-  
+        
+      </section>
+
+      
+
+      
+      <div class="divider"></div>
+
+      <section class="space-y-4">
+        
+<article>
+  <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+        this.page.identifier = '\/posts\/how-to-build-a-simple-website-with-hugo\/';
+        this.page.title = 'How To Build A Simple Website With Hugo';
+        this.page.url = 'http:\/\/localhost:1313\/posts\/how-to-build-a-simple-website-with-hugo\/';
+
+        
+    };
+    function initDisqus() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "easonli" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    };
+    setTimeout(() => {
+        initDisqus();
+    }, 3000);
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 </article>
 
 
-    </main>
 
-    <footer
-  class="opaco mx-auto flex h-[4.5rem] max-w-3xl items-center px-8 text-[0.9em] opacity-60"
->
-  <div class="mr-auto">
-    &copy; 2024
-    <a class="link" href="https://blog.eason.fr.to/">Eason Li</a>
+
+
+
+
+
+
+
+      </section>
+      
+    </article>
   </div>
-  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
-    >Powered by Hugo️️</a
-  >️
-  <a
-    class="link"
-    href="https://github.com/nanxiaobei/hugo-paper"
-    rel="noopener"
-    target="_blank"
-    >✎ Paper</a
-  >
+
+  <div class="hidden lg:flex lg:flex-col lg:items-end">
+    
+  </div>
+</div>
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2025 Eason Li</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
 </footer>
 
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>© 2025 Eason Li</p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme =  null 
+  window.darkTheme =  null 
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+    
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.4.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

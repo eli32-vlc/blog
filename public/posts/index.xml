@@ -2,67 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Eason Li</title>
-    <link>https://blog.eason.fr.to/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Eason Li</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Apr 2024 13:02:04 +1000</lastBuildDate>
-    <atom:link href="https://blog.eason.fr.to/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Redesigning SchoolBox</title>
-      <link>https://blog.eason.fr.to/posts/redesigning-schoolbox/</link>
-      <pubDate>Sat, 20 Apr 2024 13:02:04 +1000</pubDate>
-      <guid>https://blog.eason.fr.to/posts/redesigning-schoolbox/</guid>
-      <description>I redesigned SchoolBox because the current design is outdated and doesn&amp;rsquo;t even support dark mode. The new design will be more modern and user-friendly. I created this as a concept art. And schoolbox please don&amp;rsquo;t sue me. Thank you for reading this post. If you have any feedback or suggestions, please feel free to leave a comment below.</description>
-    </item>
+    <lastBuildDate>Wed, 17 Apr 2024 13:02:04 +1000</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Moving away from Github Pages to Cloudflare Pages</title>
-      <link>https://blog.eason.fr.to/posts/moving-away-from-github-pages-to-cloudflare-pages/</link>
+      <link>http://localhost:1313/posts/moving-away-from-github-pages-to-cloudflare-pages/</link>
       <pubDate>Wed, 17 Apr 2024 13:02:04 +1000</pubDate>
-      <guid>https://blog.eason.fr.to/posts/moving-away-from-github-pages-to-cloudflare-pages/</guid>
-      <description>Context For almost all of my projects, I have been using GitHub Pages because it nicely integrates with GitHub. However, for some of my projects, GitHub Pages are just not sufficient. With GitHub Pages, there is a cap of 100 GB bandwidth per month and 1 GB storage, which is inadequate for some of my projects. Therefore, I decided to migrate to Cloudflare Pages.&#xA;Why Cloudflare Pages? My website is powered by Cloudflare, obviously.</description>
+      <guid>http://localhost:1313/posts/moving-away-from-github-pages-to-cloudflare-pages/</guid>
+      <description>&lt;h3 id=&#34;context&#34;&gt;Context&lt;/h3&gt;&#xA;&lt;p&gt;For almost all of my projects, I have been using GitHub Pages because it nicely integrates with GitHub. However, for some of my projects, GitHub Pages are just not sufficient. With GitHub Pages, there is a cap of 100 GB bandwidth per month and 1 GB storage, which is inadequate for some of my projects. Therefore, I decided to migrate to Cloudflare Pages.&lt;/p&gt;&#xA;&lt;h3 id=&#34;why-cloudflare-pages&#34;&gt;Why Cloudflare Pages?&lt;/h3&gt;&#xA;&lt;p&gt;My website is powered by Cloudflare, obviously. Cloudflare Pages is significantly faster since it uses Cloudflare&amp;rsquo;s global network. Cloudflare has CDN servers all around the world. If you don&amp;rsquo;t know what CDN is, it stands for Content Delivery Network. It&amp;rsquo;s a network of servers that deliver websites based on the user&amp;rsquo;s location. Cloudflare Pages also offers unlimited bandwidth and 500 builds per month for free. 500 builds a month is somewhat limited since I publish content every day and like to change settings to experiment with my website. But it&amp;rsquo;s still better than Github Pages.&lt;/p&gt;</description>
     </item>
     <item>
       <title>How To Build A Simple Website With Hugo</title>
-      <link>https://blog.eason.fr.to/posts/how-to-build-a-simple-website-with-hugo/</link>
+      <link>http://localhost:1313/posts/how-to-build-a-simple-website-with-hugo/</link>
       <pubDate>Tue, 16 Apr 2024 13:02:04 +1000</pubDate>
-      <guid>https://blog.eason.fr.to/posts/how-to-build-a-simple-website-with-hugo/</guid>
-      <description>Introduction In this blog post, I&amp;rsquo;ll demonstrate how to construct a basic website using Hugo. For those unfamiliar, Hugo is a static site generator written in Go, known for its speed and user-friendliness. It&amp;rsquo;s versatile enough to create anything from straightforward blogs to intricate websites. As an example, this very blog post you&amp;rsquo;re reading is crafted using Hugo with the Paper theme.&#xA;Prerequisites Before we dive in, ensure you have the following:</description>
+      <guid>http://localhost:1313/posts/how-to-build-a-simple-website-with-hugo/</guid>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;In this blog post, I&amp;rsquo;ll demonstrate how to construct a basic website using Hugo. For those unfamiliar, Hugo is a static site generator written in Go, known for its speed and user-friendliness. It&amp;rsquo;s versatile enough to create anything from straightforward blogs to intricate websites. As an example, this very blog post you&amp;rsquo;re reading is crafted using Hugo with the Paper theme.&lt;/p&gt;&#xA;&lt;h3 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h3&gt;&#xA;&lt;p&gt;Before we dive in, ensure you have the following:&lt;/p&gt;</description>
     </item>
     <item>
       <title>How I Created A Simple Python API For Generating Random Word</title>
-      <link>https://blog.eason.fr.to/posts/how-i-created-a-simple-python-api-for-generating-random-word/</link>
+      <link>http://localhost:1313/posts/how-i-created-a-simple-python-api-for-generating-random-word/</link>
       <pubDate>Mon, 15 Apr 2024 13:02:04 +1000</pubDate>
-      <guid>https://blog.eason.fr.to/posts/how-i-created-a-simple-python-api-for-generating-random-word/</guid>
-      <description>Context I created a simple Python API that generates a random word upon request. This project was inspired by Fireship&amp;rsquo;s Node.js API video. I simply created this API for fun, not as a side hustle, and I made the API open-source on my GitHub page.&#xA;Creating the API First, I searched YouTube and found a video about creating a simple API using Flask. I watched the video and followed along. Then, I asked ChatGPT to generate a list of words ordered alphabetically (A-Z).</description>
+      <guid>http://localhost:1313/posts/how-i-created-a-simple-python-api-for-generating-random-word/</guid>
+      <description>&lt;h3 id=&#34;context&#34;&gt;Context&lt;/h3&gt;&#xA;&lt;p&gt;I created a simple Python API that generates a random word upon request. This project was inspired by Fireship&amp;rsquo;s Node.js API video. I simply created this API for fun, not as a side hustle, and I made the API open-source on my GitHub page.&lt;/p&gt;&#xA;&lt;h3 id=&#34;creating-the-api&#34;&gt;Creating the API&lt;/h3&gt;&#xA;&lt;p&gt;First, I searched YouTube and found a video about creating a simple API using Flask. I watched the video and followed along. Then, I asked ChatGPT to generate a list of words ordered alphabetically (A-Z). Next, I created a Python variable to store the list of words. Finally, I replaced the emoji used in the video with the variable.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Random Word API</title>
-      <link>https://blog.eason.fr.to/posts/random-word-api/</link>
+      <link>http://localhost:1313/posts/random-word-api/</link>
       <pubDate>Mon, 15 Apr 2024 13:02:04 +1000</pubDate>
-      <guid>https://blog.eason.fr.to/posts/random-word-api/</guid>
-      <description>I created a simple random word api that will generate a random word upon request. To use this, send a GET request to this url:&#xA;http://easapi.pythonanywhere.com/api?api_key=Il3KG8LWRwtJ2bMFWT3bpvlMZS1vitJf8LhT95AIRtLDj6CkHLmQm7nnOorUWaqn7ASABJVtDpOsCAsKpZNtRVo3exppbpL99x5cstbYugMmK0FyUBJNjePULoty7YiX This URL inculdes the api key and no other configuration is needed.&#xA;Please don&amp;rsquo;t spam the api, it&amp;rsquo;s hosted on a free server. More server will be added soon.</description>
+      <guid>http://localhost:1313/posts/random-word-api/</guid>
+      <description>&lt;h3 id=&#34;random-word-api-for-generating-random-word&#34;&gt;Random word API for generating random word.&lt;/h3&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;To use this, send a GET request to this url:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;http://easapi.pythonanywhere.com/api?api_key&lt;span style=&#34;color:#ff6ac1&#34;&gt;=&lt;/span&gt;Il3KG8LWRwtJ2bMFWT3bpvlMZS1vitJf8LhT95AIRtLDj6CkHLmQm7nnOorUWaqn7ASABJVtDpOsCAsKpZNtRVo3exppbpL99x5cstbYugMmK0FyUBJNjePULoty7YiX&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This URL inculdes the api key and no other configuration is needed.&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;  &lt;blockquote&gt;&#xA;    &lt;p&gt;Please don&amp;rsquo;t spam the api, it&amp;rsquo;s hosted on a free server.&#xA;More server will be added soon.&lt;/p&gt;&#xA;  &lt;/blockquote&gt;</description>
     </item>
     <item>
       <title>Effortlessly Manage Docker With Portainer: A Step by Step Guide</title>
-      <link>https://blog.eason.fr.to/posts/effortlessly-manage-docker-with-portainer-a-step-by-step-guide/</link>
+      <link>http://localhost:1313/posts/effortlessly-manage-docker-with-portainer-a-step-by-step-guide/</link>
       <pubDate>Sun, 14 Apr 2024 13:02:04 +1000</pubDate>
-      <guid>https://blog.eason.fr.to/posts/effortlessly-manage-docker-with-portainer-a-step-by-step-guide/</guid>
-      <description>Portainer: A Web UI for Docker Management&#xA;Portainer is a web UI tool for Docker that allows you to manage Docker containers, Kubernetes clusters, and Docker Compose stacks all in one convenient interface. In this blog post, I&amp;rsquo;ll show you how to install Portainer using Docker.&#xA;Prerequisites&#xA;Ensure Docker is installed and running on your system. You&amp;rsquo;ll need root privileges to create the Docker volume. (Optional) Configure a firewall whitelist rule for Portainer&amp;rsquo;s access (if applicable).</description>
+      <guid>http://localhost:1313/posts/effortlessly-manage-docker-with-portainer-a-step-by-step-guide/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Portainer: A Web UI for Docker Management&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Portainer is a web UI tool for Docker that allows you to manage Docker containers, Kubernetes clusters, and Docker Compose stacks all in one convenient interface. In this blog post, I&amp;rsquo;ll show you how to install Portainer using Docker.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Prerequisites&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ensure Docker is installed and running on your system.&lt;/li&gt;&#xA;&lt;li&gt;You&amp;rsquo;ll need root privileges to create the Docker volume.&lt;/li&gt;&#xA;&lt;li&gt;(Optional) Configure a firewall whitelist rule for Portainer&amp;rsquo;s access (if applicable).&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Installation Guide&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>How To Setup A Free Wordpress Website With Infinityfree</title>
-      <link>https://blog.eason.fr.to/posts/how-to-setup-a-free-wordpress-website-with-infinityfree/</link>
+      <link>http://localhost:1313/posts/how-to-setup-a-free-wordpress-website-with-infinityfree/</link>
       <pubDate>Sun, 14 Apr 2024 13:02:04 +1000</pubDate>
-      <guid>https://blog.eason.fr.to/posts/how-to-setup-a-free-wordpress-website-with-infinityfree/</guid>
-      <description>In this blog post, I&amp;rsquo;m going to show you how to host a free WordPress website using InfinityFree.&#xA;Things you&amp;rsquo;ll need:&#xA;An email address A computer Some knowledge Things you might want to know:&#xA;Unlimited Bandwidth 5GB Disk Space 50000 daily hit limit No email account 30019 inodes limit Free ssl certificate 1. Sign Up for InfinityFree&#xA;First, open your email client and head over to the InfinityFree website (https://www.infinityfree.com/). Signing up is pretty straightforward.</description>
+      <guid>http://localhost:1313/posts/how-to-setup-a-free-wordpress-website-with-infinityfree/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;In this blog post, I&amp;rsquo;m going to show you how to host a free WordPress website using InfinityFree.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Things you&amp;rsquo;ll need:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;An email address&lt;/li&gt;&#xA;&lt;li&gt;A computer&lt;/li&gt;&#xA;&lt;li&gt;Some knowledge&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Things you might want to know:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Unlimited Bandwidth&lt;/li&gt;&#xA;&lt;li&gt;5GB Disk Space&lt;/li&gt;&#xA;&lt;li&gt;50000 daily hit limit&lt;/li&gt;&#xA;&lt;li&gt;No email account&lt;/li&gt;&#xA;&lt;li&gt;30019 inodes limit&lt;/li&gt;&#xA;&lt;li&gt;Free ssl certificate&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;1. Sign Up for InfinityFree&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;First, open your email client and head over to the InfinityFree website (&lt;a href=&#34;https://www.infinityfree.com/&#34; target=&#34;_blank&#34;&gt;https://www.infinityfree.com/&lt;/a&gt;&#xA;). Signing up is pretty straightforward.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Spice Up Your Terminal With Oh My Zsh</title>
-      <link>https://blog.eason.fr.to/posts/spice-up-your-terminal-with-oh-my-zsh/</link>
+      <link>http://localhost:1313/posts/spice-up-your-terminal-with-oh-my-zsh/</link>
       <pubDate>Sun, 14 Apr 2024 13:02:04 +1000</pubDate>
-      <guid>https://blog.eason.fr.to/posts/spice-up-your-terminal-with-oh-my-zsh/</guid>
-      <description>Oh My Zsh is an open-source, community-driven framework for managing your zsh configuration. - Oh My ZSH Github&#xA;In this blog post, I will guide you to install Oh My Zsh on your computer. Oh My Zsh allows you to customize your terminal prompt.&#xA;Pre-requisites: MacOS or Linux because Oh My Zsh works best on Unix-based systems (WSL will work) curl or wget Install zsh: Ubuntu/Debian: sudo apt install zsh Fedora: sudo yum install zsh Set zsh as default shell: chsh -s /bin/zsh Note: For some systems, you need to log out and log in again to take effect.</description>
+      <guid>http://localhost:1313/posts/spice-up-your-terminal-with-oh-my-zsh/</guid>
+      <description>&lt;blockquote&gt;&#xA;    &lt;p&gt;Oh My Zsh is an open-source, community-driven framework for managing your &lt;a href=&#34;https://www.zsh.org/&#34; target=&#34;_blank&#34;&gt;zsh&lt;/a&gt;&#xA; configuration. - Oh My ZSH Github&lt;/p&gt;&#xA;  &lt;/blockquote&gt;&#xA;&#xA;&lt;p&gt;In this blog post, I will guide you to install Oh My Zsh on your computer. Oh My Zsh allows you to customize your terminal prompt.&lt;/p&gt;&#xA;&lt;h2 id=&#34;pre-requisites&#34;&gt;Pre-requisites:&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;MacOS or Linux because Oh My Zsh works best on Unix-based systems (WSL will work)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;curl&lt;/code&gt; or &lt;code&gt;wget&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;install-zsh&#34;&gt;Install zsh:&lt;/h2&gt;&#xA;&lt;h4 id=&#34;ubuntudebian&#34;&gt;Ubuntu/Debian:&lt;/h4&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install zsh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;fedora&#34;&gt;Fedora:&lt;/h4&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo yum install zsh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;set-zsh-as-default-shell&#34;&gt;Set zsh as default shell:&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e2e4e5;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;chsh -s /bin/zsh&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&#xA;&#xA;&#xA;  &lt;blockquote&gt;&#xA;    &lt;p&gt;Note: For some systems, you need to log out and log in again to take effect.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
