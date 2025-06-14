@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Free proxy setup using Render and VLESS - The Glitch Report</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="
+This is based on my censorship bypass guide. You may have heard me mention that I use Render for my VPN. This setup is built on top of the VLESS protocol developed by V2Ray — a highly effective protocol for bypassing censorship.
+Each instance has a 10GB limit, but you can delete and redeploy the instance to reset the limit. The code is obfuscated to avoid keyword detection enforced by Render. Since Render is a web hosting platform, governments blocking Render will block all sites hosted on it. However, if only your specific address is blocked, you can simply redeploy your instance to get a new domain name." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/posts/free-proxy-setup-using-render-and-vless/">
+  <meta property="og:site_name" content="The Glitch Report">
+  <meta property="og:title" content="Free proxy setup using Render and VLESS">
+  <meta property="og:description" content="This is based on my censorship bypass guide. You may have heard me mention that I use Render for my VPN. This setup is built on top of the VLESS protocol developed by V2Ray — a highly effective protocol for bypassing censorship.
+Each instance has a 10GB limit, but you can delete and redeploy the instance to reset the limit. The code is obfuscated to avoid keyword detection enforced by Render. Since Render is a web hosting platform, governments blocking Render will block all sites hosted on it. However, if only your specific address is blocked, you can simply redeploy your instance to get a new domain name.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-06-15T08:50:32+10:00">
+    <meta property="article:modified_time" content="2025-06-15T08:50:32+10:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Free proxy setup using Render and VLESS">
+  <meta name="twitter:description" content="This is based on my censorship bypass guide. You may have heard me mention that I use Render for my VPN. This setup is built on top of the VLESS protocol developed by V2Ray — a highly effective protocol for bypassing censorship.
+Each instance has a 10GB limit, but you can delete and redeploy the instance to reset the limit. The code is obfuscated to avoid keyword detection enforced by Render. Since Render is a web hosting platform, governments blocking Render will block all sites hosted on it. However, if only your specific address is blocked, you can simply redeploy your instance to get a new domain name.">
+
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.6a0f23ea50fd34b46fee262a5a68e17d458c51a2bc99ba1ba018065de6b180c3.css" />
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">The Glitch Report</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/about">About Me</a>
+		
+		<a href="/contacts">Contact Me</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">Free proxy setup using Render and VLESS</h1>
+          <div class="meta">Posted on Jun 15, 2025</div>
+        </div>
+        
+        <section class="body">
+          <p><img src="https://files.catbox.moe/90yuw9.png" alt="Banner"></p>
+<p>This is based on my censorship bypass guide. You may have heard me mention that I use Render for my VPN. This setup is built on top of the VLESS protocol developed by V2Ray — a highly effective protocol for bypassing censorship.</p>
+<p>Each instance has a 10GB limit, but you can delete and redeploy the instance to reset the limit. The code is obfuscated to avoid keyword detection enforced by Render. Since Render is a web hosting platform, governments blocking Render will block all sites hosted on it. However, if only your specific address is blocked, you can simply redeploy your instance to get a new domain name.</p>
+<p>Any email address should work, but if you&rsquo;re privacy-conscious, consider using a custom email. This also allows you to register multiple accounts. Make sure to sign up for Render using a <strong>home IP address</strong> — if they detect a datacenter IP, they may ask for a credit card.</p>
+<blockquote>
+<p>⚠️ This method is not widely known, so please don&rsquo;t share it publicly to prevent it from being patched.</p></blockquote>
+<hr>
+<h3 id="steps">Steps:</h3>
+<ol>
+<li>Create a <a href="https://render.com">Render</a> account. No credit card is required, but make sure to sign up using your home IP.</li>
+<li>Remember this repo URL: <a href="https://github.com/eli32-vlc/scrper">https://github.com/eli32-vlc/scrper</a></li>
+<li>Create a new <strong>Web Application/Service</strong> instance on Render.</li>
+<li>Choose &ldquo;Public Git Repository&rdquo; and paste in the repo URL.</li>
+<li>Leave everything unchanged <strong>except</strong>:</li>
+</ol>
+<ul>
+<li>Choose a location close to you.</li>
+<li>Change the <strong>Build Command</strong> to: <code>npm install</code></li>
+<li>Set the instance type to <strong>Free</strong></li>
+</ul>
+<ol start="6">
+<li>
+<p>Scroll down and click <strong>&ldquo;Add from .env&rdquo;</strong></p>
+</li>
+<li>
+<p>Paste in the following environment variables:</p>
+<p>DISCORD_WEBHOOK_URL=your Discord webhook
+PORT=443
+REFRESH_UUID_INTERVAL=300000
+SPEED_LIMIT_MBPS=200  # (Change if desired)
+UUID_LIST_URL=https://pastebin.com/raw/PASTEBIN_ID</p>
+</li>
+<li>
+<p>You’ll need a list of UUIDs, one per line, hosted publicly (e.g., in Pastebin or a raw <code>.txt</code> file). Copy the <strong>raw</strong> URL and paste it into <code>UUID_LIST_URL</code>.</p>
+</li>
+<li>
+<p>Click <strong>Deploy Web Service</strong></p>
+</li>
+</ol>
+<hr>
+<h3 id="set-up-the-client">Set Up the Client</h3>
+<p>You can use:</p>
+<ul>
+<li>Hiddify</li>
+<li>Nekoray (archived)</li>
+<li>V2RayN</li>
+</ul>
+<p><strong>Configuration:</strong></p>
+<ul>
+<li><strong>Address:</strong><code>your-app-name.onrender.com</code></li>
+<li><strong>Port:</strong><code>443</code></li>
+<li><strong>UUID:</strong> one of the UUIDs from your list</li>
+<li><strong>Network:</strong><code>WS</code></li>
+<li><strong>SNI:</strong> same as address</li>
+<li><strong>Path:</strong><code>/</code></li>
+</ul>
+<hr>
+<p>✅ You’re good to go! Save your <code>.env</code> settings in a text file for faster future deployment.</p>
+<hr>
+<p><strong>Disclaimer:</strong></p>
+<blockquote>
+<p>AI was used to correct grammar and spelling. The original logic and content were created by a human.</p></blockquote>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  <div class="footer-info">
+    2025  © Zenith Rifle |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+</div>
+    </body>
+</html>
