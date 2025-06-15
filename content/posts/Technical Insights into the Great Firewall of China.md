@@ -10,7 +10,13 @@ In this blog post, we are going to talk about how the GFW (Great Firewall) funct
 
 ### How does the GFW function?
 
-Well, we don't actually know because the source code is not public, and it's a government thing. We can make some educated guesses based on the projects around us. The GFW works by doing DPI (deep packet inspection)—that’s how most government censorship firewalls work. It inspects your internet packets looking for blocked sites, prohibited content, etc. Then it responds back with either a server reset error or a DNS poisoning attack.
+We don't know fully how GFW works but there are research articles from China on how to build GFW. We can make some educated guesses based on the projects around us. The GFW works by doing DPI (deep packet inspection)—that’s how most government censorship firewalls work. It inspects your internet packets looking for blocked sites, prohibited content, etc. Then it responds back with either a server reset error or a DNS poisoning attack.
+
+Research Articles (I am forced to put these articles on the blog.)
+
+Article 1: [Link](https://github.com/net4people/bbs/issues/435)
+Article 2: [Link](https://github.com/net4people/bbs/issues/437)
+Article 3: [Link](https://github.com/net4people/bbs/issues/434)
 
 ### How does the GFW detect VPNs?
 
