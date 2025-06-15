@@ -2,35 +2,12 @@
 <html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Set Up Code Server with Render - The Glitch Report</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="
-What is Code Server?
-It&rsquo;s just VS Code in a browser, but with a terminal and environment to run your code.
-Important Considerations:
-
-Data Loss Warning: You will lose all your data and dependencies if you don&rsquo;t keep the tab open for more than 5 seconds—unless you use UptimeRobot, which can keep your instance alive and preserve data for up to a month. If using UptimeRobot, set it up on a new account without any other monitored services.
-Bandwidth Limit: Render has a 10GB outbound bandwidth limit. You must not exceed this. &ldquo;Outbound&rdquo; means traffic going out—for example, downloading packages or files. Once the limit is exceeded, you can simply redeploy the instance, but your data will be lost.
-System Resources: The free tier includes 512MB of RAM and 0.1 CPU.
-
-
-How to Deploy It:
-
-Open your Render Dashboard.
-Click &ldquo;Add New&rdquo;.
-Select &ldquo;Web Service&rdquo;.
-Click &ldquo;Public Git Repository&rdquo;.
-Paste in:
-https://github.com/eli32-vlc/code-server-dockefile
-(Optional) Choose your preferred region.
-For Instance Type, select Free.
-Click &ldquo;Deploy Web Service&rdquo;.
-
-Scroll down to Environment Variables, click &ldquo;Add from .env&rdquo;, and paste:" />
+	<meta name="description" content="Guide to deploying a browser-based VS Code environment on Render with tips to keep it running smoothly." />
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content="http://localhost:1313/posts/set-up-code-server-with-render/">
   <meta property="og:site_name" content="The Glitch Report">
   <meta property="og:title" content="Set Up Code Server with Render">
-  <meta property="og:description" content="What is Code Server? It’s just VS Code in a browser, but with a terminal and environment to run your code.
-Important Considerations: Data Loss Warning: You will lose all your data and dependencies if you don’t keep the tab open for more than 5 seconds—unless you use UptimeRobot, which can keep your instance alive and preserve data for up to a month. If using UptimeRobot, set it up on a new account without any other monitored services. Bandwidth Limit: Render has a 10GB outbound bandwidth limit. You must not exceed this. “Outbound” means traffic going out—for example, downloading packages or files. Once the limit is exceeded, you can simply redeploy the instance, but your data will be lost. System Resources: The free tier includes 512MB of RAM and 0.1 CPU. How to Deploy It: Open your Render Dashboard. Click “Add New”. Select “Web Service”. Click “Public Git Repository”. Paste in: https://github.com/eli32-vlc/code-server-dockefile (Optional) Choose your preferred region. For Instance Type, select Free. Click “Deploy Web Service”. Scroll down to Environment Variables, click “Add from .env”, and paste:">
+  <meta property="og:description" content="Guide to deploying a browser-based VS Code environment on Render with tips to keep it running smoothly.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -39,8 +16,7 @@ Important Considerations: Data Loss Warning: You will lose all your data and dep
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Set Up Code Server with Render">
-  <meta name="twitter:description" content="What is Code Server? It’s just VS Code in a browser, but with a terminal and environment to run your code.
-Important Considerations: Data Loss Warning: You will lose all your data and dependencies if you don’t keep the tab open for more than 5 seconds—unless you use UptimeRobot, which can keep your instance alive and preserve data for up to a month. If using UptimeRobot, set it up on a new account without any other monitored services. Bandwidth Limit: Render has a 10GB outbound bandwidth limit. You must not exceed this. “Outbound” means traffic going out—for example, downloading packages or files. Once the limit is exceeded, you can simply redeploy the instance, but your data will be lost. System Resources: The free tier includes 512MB of RAM and 0.1 CPU. How to Deploy It: Open your Render Dashboard. Click “Add New”. Select “Web Service”. Click “Public Git Repository”. Paste in: https://github.com/eli32-vlc/code-server-dockefile (Optional) Choose your preferred region. For Instance Type, select Free. Click “Deploy Web Service”. Scroll down to Environment Variables, click “Add from .env”, and paste:">
+  <meta name="twitter:description" content="Guide to deploying a browser-based VS Code environment on Render with tips to keep it running smoothly.">
 
         <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
 	

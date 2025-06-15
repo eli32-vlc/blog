@@ -3,17 +3,19 @@
 	<head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>The Glitch Report | Home </title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
+	<meta name="description" content="Thoughts on security, privacy, censorship, and hacking." />
 	<meta property="og:image" content=""/>
 	<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml" title="The Glitch Report" />
 	<meta property="og:url" content="http://localhost:1313/">
   <meta property="og:site_name" content="The Glitch Report">
   <meta property="og:title" content="The Glitch Report">
+  <meta property="og:description" content="Thoughts on security, privacy, censorship, and hacking.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="The Glitch Report">
+  <meta name="twitter:description" content="Thoughts on security, privacy, censorship, and hacking.">
 
         <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
 	
@@ -50,13 +52,22 @@
 				
 				
 				<section class="list-item">
+					<h1 class="title"><a href="/posts/technical-insights-into-the-great-firewall-of-china/">Technical Insights into the Great Firewall of China</a></h1>
+					<time>Jun 15, 2025</time>
+					<br><div class="description">
+	
+	Taking a closer look at how China’s Great Firewall works, how it detects VPNs and proxies, and some of the newer tools people use to bypass censorship.
+	
+</div>
+					<a class="readmore" href="/posts/technical-insights-into-the-great-firewall-of-china/">Read more ⟶</a>
+				</section>
+				
+				<section class="list-item">
 					<h1 class="title"><a href="/posts/free-proxy-setup-using-render-and-vless/">Free proxy setup using Render and VLESS</a></h1>
 					<time>Jun 15, 2025</time>
 					<br><div class="description">
 	
-	<p><img src="https://files.catbox.moe/90yuw9.png" alt="Banner"></p>
-<p>This is based on my censorship bypass guide. You may have heard me mention that I use Render for my VPN. This setup is built on top of the VLESS protocol developed by V2Ray — a highly effective protocol for bypassing censorship.</p>
-<p>Each instance has a 10GB limit, but you can delete and redeploy the instance to reset the limit. The code is obfuscated to avoid keyword detection enforced by Render. Since Render is a web hosting platform, governments blocking Render will block all sites hosted on it. However, if only your specific address is blocked, you can simply redeploy your instance to get a new domain name.</p>&hellip;
+	Guide to setting up a free, censorship-resistant proxy using Render and the VLESS protocol.
 	
 </div>
 					<a class="readmore" href="/posts/free-proxy-setup-using-render-and-vless/">Read more ⟶</a>
@@ -67,11 +78,7 @@
 					<time>Jun 15, 2025</time>
 					<br><div class="description">
 	
-	<p><img src="https://files.catbox.moe/r8gz9i.png" alt="Banner">
-<strong>Important Notice:</strong>
-This is a new hack I discovered, so please <strong>do not share</strong> it publicly to avoid it being patched.</p>
-<h3 id="why-use-render-as-a-vps-provider">Why Use Render as a VPS Provider?</h3>
-<p>Render is an excellent choice because it&rsquo;s <strong>free</strong> and doesn&rsquo;t require a credit card. However, since Render restricts terminal access behind a paywall, we&rsquo;ll need to get creative. Our solution is to run a <strong>Linux Docker container</strong> with a <strong>web terminal</strong>, secured by <strong>HTTP basic authentication</strong>. This method ensures we have some security while still keeping the service free.</p>&hellip;
+	Step-by-step guide to creating a free VPS on Render using Docker and a web terminal.
 	
 </div>
 					<a class="readmore" href="/posts/free-vps-with-render/">Read more ⟶</a>
@@ -82,20 +89,7 @@ This is a new hack I discovered, so please <strong>do not share</strong> it publ
 					<time>Jun 15, 2025</time>
 					<br><div class="description">
 	
-	<p><img src="https://files.catbox.moe/wi79f7.png" alt="Banner"></p>
-<h2 id="important-considerations">Important Considerations</h2>
-<ol>
-<li>Your URL will stop working after 5 minutes if you host other services on the same account. My suggestion is to create multiple accounts for each service, as Render has an instance time limit per month.</li>
-<li>You need to have a Discord account and a Discord server.</li>
-<li>You can&rsquo;t deactivate URLs after they have been sent.</li>
-<li>There is a web UI to help you set up links.</li>
-<li>Feel free to disguise this as an image hosting site.</li>
-</ol>
-<hr>
-<h3 id="how-to-set-up">How to Set Up</h3>
-<ol>
-<li>
-<p>Create a new web service.</p>&hellip;
+	How to self-host an IP logger on Render with Discord integration and a simple web UI.
 	
 </div>
 					<a class="readmore" href="/posts/self-host-ip-logger-using-render/">Read more ⟶</a>
@@ -106,29 +100,7 @@ This is a new hack I discovered, so please <strong>do not share</strong> it publ
 					<time>Jun 15, 2025</time>
 					<br><div class="description">
 	
-	<p><img src="https://files.catbox.moe/reyiel.png" alt="Banner"></p>
-<h3 id="what-is-code-server">What is Code Server?</h3>
-<p>It&rsquo;s just VS Code in a browser, but with a terminal and environment to run your code.</p>
-<h3 id="important-considerations">Important Considerations:</h3>
-<ol>
-<li><strong>Data Loss Warning</strong>: You will lose all your data and dependencies if you don&rsquo;t keep the tab open for more than 5 seconds—unless you use UptimeRobot, which can keep your instance alive and preserve data for up to a month. If using UptimeRobot, set it up on a new account without any other monitored services.</li>
-<li><strong>Bandwidth Limit</strong>: Render has a 10GB outbound bandwidth limit. You must not exceed this. &ldquo;Outbound&rdquo; means traffic going out—for example, downloading packages or files. Once the limit is exceeded, you can simply redeploy the instance, but <strong>your data will be lost</strong>.</li>
-<li><strong>System Resources</strong>: The free tier includes 512MB of RAM and 0.1 CPU.</li>
-</ol>
-<hr>
-<h3 id="how-to-deploy-it">How to Deploy It:</h3>
-<ol>
-<li>Open your <a href="https://dashboard.render.com/">Render Dashboard</a>.</li>
-<li>Click <strong>&ldquo;Add New&rdquo;</strong>.</li>
-<li>Select <strong>&ldquo;Web Service&rdquo;</strong>.</li>
-<li>Click <strong>&ldquo;Public Git Repository&rdquo;</strong>.</li>
-<li>Paste in:
-<code>https://github.com/eli32-vlc/code-server-dockefile</code></li>
-<li>(Optional) Choose your preferred region.</li>
-<li>For <strong>Instance Type</strong>, select <strong>Free</strong>.</li>
-<li>Click <strong>&ldquo;Deploy Web Service&rdquo;</strong>.</li>
-</ol>
-<p>Scroll down to <strong>Environment Variables</strong>, click <strong>&ldquo;Add from .env&rdquo;</strong>, and paste:</p>&hellip;
+	Guide to deploying a browser-based VS Code environment on Render with tips to keep it running smoothly.
 	
 </div>
 					<a class="readmore" href="/posts/set-up-code-server-with-render/">Read more ⟶</a>

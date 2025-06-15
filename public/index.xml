@@ -7,8 +7,15 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>© Zenith Rifle</copyright>
-    <lastBuildDate>Sun, 15 Jun 2025 08:50:32 +1000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Jun 2025 12:36:15 +1000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technical Insights into the Great Firewall of China</title>
+      <link>http://localhost:1313/posts/technical-insights-into-the-great-firewall-of-china/</link>
+      <pubDate>Sun, 15 Jun 2025 12:36:15 +1000</pubDate>
+      <guid>http://localhost:1313/posts/technical-insights-into-the-great-firewall-of-china/</guid>
+      <description>&lt;p&gt;&lt;img src=&#34;https://files.catbox.moe/n1u6by.png&#34; alt=&#34;Banner&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;In this blog post, we are going to talk about how the GFW (Great Firewall) functions, common tools to bypass it, and explain how China&amp;rsquo;s international internet functions.&lt;/p&gt;&#xA;&lt;h3 id=&#34;how-does-the-gfw-function&#34;&gt;How does the GFW function?&lt;/h3&gt;&#xA;&lt;p&gt;Well, we don&amp;rsquo;t actually know because the source code is not public, and it&amp;rsquo;s a government thing. We can make some educated guesses based on the projects around us. The GFW works by doing DPI (deep packet inspection)—that’s how most government censorship firewalls work. It inspects your internet packets looking for blocked sites, prohibited content, etc. Then it responds back with either a server reset error or a DNS poisoning attack.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>About Me</title>
       <link>http://localhost:1313/about/</link>

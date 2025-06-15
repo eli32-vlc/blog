@@ -8,6 +8,7 @@ copyright = "© Zenith Rifle"
 	mode="dark" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	description = "Thoughts on security, privacy, censorship, and hacking."
+	ShowReadingTime = true
 
 
 
