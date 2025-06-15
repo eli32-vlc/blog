@@ -1,6 +1,7 @@
 ---
 title: "Free proxy setup using Render and VLESS"
 date: 2025-06-15T08:50:32+1000
+description: "Guide to setting up a free, censorship-resistant proxy using Render and the VLESS protocol."
 ---
 
 ![Banner](https://files.catbox.moe/90yuw9.png)

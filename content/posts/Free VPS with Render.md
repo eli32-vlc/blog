@@ -1,6 +1,7 @@
 ---
 title: "Free VPS with Render"
 date: 2025-06-15T08:50:32+1000
+description: "Step-by-step guide to creating a free VPS on Render using Docker and a web terminal."
 ---
 
 ![Banner](https://files.catbox.moe/r8gz9i.png)

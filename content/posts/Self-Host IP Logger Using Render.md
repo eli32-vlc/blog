@@ -1,6 +1,7 @@
 ---
 title: "Self-Host IP Logger Using Render"
 date: 2025-06-15T08:50:32+1000
+description: "How to self-host an IP logger on Render with Discord integration and a simple web UI."
 ---
 
 ![Banner](https://files.catbox.moe/wi79f7.png)

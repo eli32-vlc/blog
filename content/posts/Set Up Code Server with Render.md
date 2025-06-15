@@ -1,6 +1,7 @@
 ---
 title: "Set Up Code Server with Render"
 date: 2025-06-15T08:50:32+1000
+description: "Guide to deploying a browser-based VS Code environment on Render with tips to keep it running smoothly."
 ---
 
 ![Banner](https://files.catbox.moe/reyiel.png)
