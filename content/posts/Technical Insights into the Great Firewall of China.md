@@ -15,7 +15,9 @@ We don't know fully how GFW works but there are research articles from China on 
 Research Articles (I am forced to put these articles on the blog.)
 
 Article 1: [Link](https://github.com/net4people/bbs/issues/435)
+
 Article 2: [Link](https://github.com/net4people/bbs/issues/437)
+
 Article 3: [Link](https://github.com/net4people/bbs/issues/434)
 
 ### How does the GFW detect VPNs?
