@@ -58,7 +58,11 @@
           <p><img src="https://files.catbox.moe/n1u6by.png" alt="Banner"></p>
 <p>In this blog post, we are going to talk about how the GFW (Great Firewall) functions, common tools to bypass it, and explain how China&rsquo;s international internet functions.</p>
 <h3 id="how-does-the-gfw-function">How does the GFW function?</h3>
-<p>Well, we don&rsquo;t actually know because the source code is not public, and it&rsquo;s a government thing. We can make some educated guesses based on the projects around us. The GFW works by doing DPI (deep packet inspection)—that’s how most government censorship firewalls work. It inspects your internet packets looking for blocked sites, prohibited content, etc. Then it responds back with either a server reset error or a DNS poisoning attack.</p>
+<p>We don&rsquo;t know fully how GFW works but there are research articles from China on how to build GFW. We can make some educated guesses based on the projects around us. The GFW works by doing DPI (deep packet inspection)—that’s how most government censorship firewalls work. It inspects your internet packets looking for blocked sites, prohibited content, etc. Then it responds back with either a server reset error or a DNS poisoning attack.</p>
+<p>Research Articles (I am forced to put these articles on the blog.)</p>
+<p>Article 1: <a href="https://github.com/net4people/bbs/issues/435">Link</a></p>
+<p>Article 2: <a href="https://github.com/net4people/bbs/issues/437">Link</a></p>
+<p>Article 3: <a href="https://github.com/net4people/bbs/issues/434">Link</a></p>
 <h3 id="how-does-the-gfw-detect-vpns">How does the GFW detect VPNs?</h3>
 <p>DPI can look for common patterns caused by common VPN protocols like OpenVPN or WireGuard. They have distinct patterns and use unique ports in their traffic. OpenVPN or WireGuard are most likely long-lived connections—in human terms, these connections are being created and used indefinitely. The GFW will get suspicious of that.</p>
 <h3 id="how-does-the-gfw-detect-common-proxy-protocols">How does the GFW detect common proxy protocols?</h3>

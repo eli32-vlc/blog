@@ -1,6 +1,6 @@
 ---
 title: Deep Dive into the Henan Firewall
-date: 2025-06-16T09:34:00:z
+date: 2025-06-16T09:38:49+1000
 description: Henan has its own internet firewall now, blocking more sites than China’s national system, the GFW.
 ---
 ![Banner](https://files.catbox.moe/g6ujml.png)

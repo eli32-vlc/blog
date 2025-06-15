@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Deep Dive into the Henan Firewall - The Glitch Report</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Henan has its own internet firewall now, blocking more sites than China’s national system, the GFW." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/posts/deep-dive-into-the-henan-firewall/">
+  <meta property="og:site_name" content="The Glitch Report">
+  <meta property="og:title" content="Deep Dive into the Henan Firewall">
+  <meta property="og:description" content="Henan has its own internet firewall now, blocking more sites than China’s national system, the GFW.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Deep Dive into the Henan Firewall">
+  <meta name="twitter:description" content="Henan has its own internet firewall now, blocking more sites than China’s national system, the GFW.">
+
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.6a0f23ea50fd34b46fee262a5a68e17d458c51a2bc99ba1ba018065de6b180c3.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css"   />
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">The Glitch Report</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/about">About Me</a>
+		
+		<a href="/contacts">Contact Me</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">Deep Dive into the Henan Firewall</h1>
+          <div class="meta">Posted on Jan 1, 1</div>
+        </div>
+        
+        <section class="body">
+          <p><img src="https://files.catbox.moe/g6ujml.png" alt="Banner"></p>
+<p>For decades, censorship in China has been enforced through the Great Firewall (GFW), developed by the Cyberspace Administration of China. The GFW commonly uses DNS poisoning, TCP RST packets to block websites, and Deep Packet Inspection (DPI) to analyze network traffic. However, a recent research paper published in May 2025 revealed that the Chinese province of Henan has deployed its own regional censorship firewall. Since August 2023, the Henan firewall has been analyzing network packets originating from the province and has blocked over five times as many websites as the GFW, generally targeting generic second-level domains such as .com.au. Unlike the GFW, which may inject multiple packets to disrupt connections, the Henan firewall uses a distinctive TCP RST+ACK packet. Notably, a full TCP handshake is not required for a website or traffic to be blocked, meaning it can send the RST+ACK packet during the initial traffic pattern. Similar to the GFW, it monitors all TCP ports for TLS traffic, which is commonly used for HTTPS, leaving no ports safe.</p>
+<p>The Henan firewall only censors outbound traffic—connections originating from inside the province—and shows about a 9% overlap in its block list with the GFW. The motivation behind this firewall appears unusual, as it mainly targets domains related to &ldquo;Business,&rdquo; &ldquo;Economy,&rdquo; &ldquo;Computer,&rdquo; and &ldquo;Internet Information,&rdquo; possibly indicating local economic concerns in Henan. While it blocks more domains than the GFW, researchers have discovered a potential client-side bypass, possibly similar to tools like GoodbyeDPI, which fragment or alter data packets to evade detection by censorship systems. Nevertheless, this development marks a significant shift in censorship within China, potentially signaling a move from a centralized model to a decentralized one that could be replicated in other regions.</p>
+<p>Research Paper: <a href="https://gfw.report/publications/sp25/en/">Link</a></p>
+<blockquote>
+<p>AI used to fix spelling and grammar issues. Original text was written by Zenith as a human.</p></blockquote>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  <div class="footer-info">
+    2025  © Zenith Rifle |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+</div>
+    </body>
+</html>
