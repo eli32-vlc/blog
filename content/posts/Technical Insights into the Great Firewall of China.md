@@ -30,7 +30,7 @@ If you need an installation guide, please consult my censorship bypass guide [he
 
 #### NaiveProxy
 
-The newest one and has the lowest detection because it uses normal HTTPS/2 traffic and the Chromium browser stack, which makes the TLS client certificate look like Chrome’s. The downside is the clients—there is no client on iOS (at least any I trust), so you have to proxy through your desktop or use Android.
+The newest one and has the lowest detection because it uses normal HTTPS/2 traffic and the Chromium browser stack, which makes the TLS client server fingerprint look like Chrome’s. The downside is the clients—there is no client on iOS (at least any I trust), so you have to proxy through your desktop or use Android.
 
 #### VMESS
 

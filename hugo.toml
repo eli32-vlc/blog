@@ -1,7 +1,7 @@
 baseURL = 'https://theglitchreport.qzz.io'
 languageCode = 'en-us'
 title = 'The Glitch Report'
-theme= "archie"
+theme= ["archie", "hugo-social-metadata"]
 copyright = "© Zenith Rifle"
 
 [params]
@@ -9,6 +9,7 @@ copyright = "© Zenith Rifle"
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
 	description = "Thoughts on security, privacy, censorship, and hacking."
 	ShowReadingTime = true
+	socialImage = "https://files.catbox.moe/xycxl3.png"
 
 
 
