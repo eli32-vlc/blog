@@ -1,8 +1,13 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://theglitchreport.qzz.io'
 languageCode = 'en-us'
 title = 'The Glitch Report'
 theme= "archie"
 copyright = "© Zenith Rifle"
+
+[params]
+	mode="dark" # color-mode → light,dark,toggle or auto
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+
 
 [[menu.main]]
 name = "Home"
