@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html><head lang="en"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Moving on from VLESS to VMESS - The Glitch Report</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="School Wi-Fi intercepts TLS; switched to VMESS for encryption." />
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content="http://localhost:1313/posts/moving-on-from-vless-to-vmess/">
+  <meta property="og:site_name" content="The Glitch Report">
+  <meta property="og:title" content="Moving on from VLESS to VMESS">
+  <meta property="og:description" content="School Wi-Fi intercepts TLS; switched to VMESS for encryption.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-06-18T19:58:43+10:00">
+    <meta property="article:modified_time" content="2025-06-18T19:58:43+10:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Moving on from VLESS to VMESS">
+  <meta name="twitter:description" content="School Wi-Fi intercepts TLS; switched to VMESS for encryption.">
+
+        <link href="http://localhost:1313/css/fonts.2c2227b81b1970a03e760aa2e6121cd01f87c88586803cbb282aa224720a765f.css" rel="stylesheet">
+	
+
+	
+	<link rel="stylesheet" type="text/css" media="screen" href="http://localhost:1313/css/main.6a0f23ea50fd34b46fee262a5a68e17d458c51a2bc99ba1ba018065de6b180c3.css" />
+		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="http://localhost:1313/css/dark.50b57e12d401420df23965fed157368aba37b76df0ecefd0b1ecd4da664f01a0.css"   />
+</head>
+<body>
+        <div class="content"><header>
+	<div class="main">
+		<a href="http://localhost:1313/">The Glitch Report</a>
+	</div>
+	<nav>
+		
+		<a href="/">Home</a>
+		
+		<a href="/posts">All posts</a>
+		
+		<a href="/about">About Me</a>
+		
+		<a href="/contacts">Contact Me</a>
+		
+		
+	</nav>
+</header>
+
+<main>
+  <article>
+    <div class="post-container">
+      
+      <div class="post-content">
+        <div class="title">
+          <h1 class="title">Moving on from VLESS to VMESS</h1>
+          <div class="meta">Posted on Jun 18, 2025</div>
+        </div>
+        
+        <section class="body">
+          <p><img src="https://files.catbox.moe/b1feka.png" alt="Banner"></p>
+<p>Recently I moved from VLESS to VMESS due to a couple of reasons. First things first, we need to understand how TLS works.</p>
+<h2 id="how-tls-works">How TLS Works</h2>
+<ol>
+<li>Client says hello and offers encryption options</li>
+<li>Server replies with chosen options and its certificate</li>
+<li>Client checks the certificate</li>
+<li>Client and server agree on a secret key</li>
+<li>Client switches to encrypted mode</li>
+<li>Server switches to encrypted mode</li>
+<li>Secure communication starts</li>
+</ol>
+<p>From ChatGPT btw, TLS is the successor to SSL. But people often refer to SSL as TLS—it works, but let you know it&rsquo;s not the same.</p>
+<h2 id="school-wi-fi-and-wpa2-enterprise">School Wi-Fi and WPA2-Enterprise</h2>
+<p>Let’s get into the story. My school&rsquo;s Wi-Fi network uses something called WPA2-Enterprise. It’s an enterprise version of WPA2, as the name suggests. It uses a username and password instead of a pure password. This is better for logging purposes than a pure password, which is something I do not like because I value <strong>PRIVACY</strong>. Okay, it&rsquo;s fine if they log my connection, I could use something like VLESS to protect myself, right?</p>
+<h2 id="custom-ca-certificate-warning">Custom CA Certificate Warning</h2>
+<p>The first time I connected to the school Wi-Fi network, a warning popped up asking me if I wanted to install a custom CA certificate. I clicked yes and didn’t think much of it. When I started to use VLESS with TLS and WebSockets, some major thoughts popped up. Can my school see what I am doing through an encrypted proxy? And even worse, save my traffic and decrypt it later?</p>
+<h2 id="why-schools-install-custom-ca-certs">Why Schools Install Custom CA Certs</h2>
+<p>First things first, why do schools or companies make you install a custom CA cert? A certificate like <code>firewall.schoolname.com</code> (that’s like my certificate btw). This certificate basically tells your device to trust <code>firewall.schoolname.com</code>—says it&rsquo;s legit.</p>
+<p>Okay, it’s fine I guess, maybe it’s just for Wi-Fi authentication?</p>
+<h2 id="discovery-of-tls-interception">Discovery of TLS Interception</h2>
+<p>When I dug deeper, I noticed something concerning. Let’s say I opened <code>https://duckduckgo.com</code>. When I checked my browser certificate information, instead of DuckDuckGo&rsquo;s own certificate, it was my <code>firewall.schoolname.com</code> certificate. So I tried uninstalling the certificate. When I uninstalled it, I got an HSTS error.</p>
+<p>At this point, I knew I was <strong>COOKED</strong>.</p>
+<h2 id="man-in-the-middle-attack-in-action">Man-in-the-Middle Attack in Action</h2>
+<p><strong>How it works fully:</strong></p>
+<ol>
+<li>I go to <code>https://duckduckgo.com</code></li>
+<li>My school&rsquo;s &ldquo;firewall&rdquo; (which is actually a powerful Next-Generation Firewall acting as an intercepting proxy) grabs my request.</li>
+<li>It then makes its own secure connection to the real DuckDuckGo</li>
+<li>Then, it generates a brand new, fake certificate for <code>https://duckduckgo.com</code> (signed by <code>firewall.schoolname.com</code>) and sends that back to my device.</li>
+<li>Since I&rsquo;ve installed their custom CA certificate, my device trusts this fake certificate, thinks everything is fine, and encrypts my data to the school&rsquo;s proxy.</li>
+<li>The proxy then decrypts my data, inspects it, re-encrypts it, and sends it to the real <code>https://duckduckgo.com</code>. And it does the same thing in reverse for the response.</li>
+</ol>
+<p>They are sitting in front of every single <strong>encrypted</strong> connection, seeing EVERYTHING and passing it through.</p>
+<h2 id="why-this-matters">Why This Matters</h2>
+<p><strong>Why is this important?</strong></p>
+<p>This is very important because VLESS has no built-in encryption. Instead, it relies on TLS, which is already compromised in this scenario.</p>
+<p>You mfs already telling me how I selected “trust insecure certificates”? Well, the thing is that they are trusting it without “trust insecure certificates” because the fake certificate is stored in the Keychain Access. I also didn’t know this was happening because everything was connecting successfully without any problem.</p>
+<p>Oh, you don’t have PFS??? <strong>DONT MATTER</strong>—they are actively decrypting it, so you are cooked. Womp womp.</p>
+<h2 id="solving-this-problem">Solving This Problem</h2>
+<p><strong>Solving this problem</strong></p>
+<p>Easy—switch to VMESS. It has a layer of custom encryption on top using AES-128-GCM or ChaCha20-Poly1305, which is the gold standard and good enough. So we are wrapping the WS connection inside TLS. Inside that WS connection is the VMESS payload. Inside the VMESS payload, we have the destination site, which also uses its own TLS encryption.</p>
+<p>A quick reminder that there is an unknown exploit in your privacy setup, and you should look out for them. Custom CAs are very powerful—please look out for them. In my scenario, it means that without the CA = no internet. Also, my school uses a custom DNS server which does not allow us to change to Cloudflare. If you try, the internet wouldn’t work after changing. Please correct me if I am wrong in any part of this article.</p>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p><strong>Stay safe out there.</strong></p>
+<blockquote>
+<p>Grammar and spelling fixed by AI. Original text written by Zenith which is a human.</p></blockquote>
+
+        </section>
+        <div class="post-tags">
+          
+          
+          
+        </div>
+      </div>
+
+      
+      
+    </div>
+
+    </article>
+</main>
+<footer>
+  <div style="display:flex"></div>
+  <div class="footer-info">
+    2025  © Zenith Rifle |  <a
+      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
+  </div>
+</footer>
+
+</div>
+    </body>
+</html>
