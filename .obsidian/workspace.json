@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/Moving on from VLESS to VMESS.md",
+                "file": "content/posts/Why I Replaced Web Forums with a BBS for My Censorship Bypass Guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Moving on from VLESS to VMESS"
+              "title": "Why I Replaced Web Forums with a BBS for My Censorship Bypass Guide"
             }
           }
         ]
@@ -170,12 +170,13 @@
   },
   "active": "6527191382165565",
   "lastOpenFiles": [
+    "content/posts/Moving on from VLESS to VMESS.md",
+    "content/posts/Why I Replaced Web Forums with a BBS for My Censorship Bypass Guide.md",
+    "content/posts/Self-Host IP Logger Using Render.md",
     "public/posts/moving-on-from-vless-to-vmess/index.html",
     "public/posts/moving-on-from-vless-to-vmess",
-    "content/posts/Self-Host IP Logger Using Render.md",
     "content/posts/Set Up Code Server with Render.md",
     "content/posts/Technical Insights into the Great Firewall of China.md",
-    "content/posts/Moving on from VLESS to VMESS.md",
     "content/posts/Free VPS with Render.md",
     "content/posts/Free proxy setup using Render and VLESS.md",
     "themes/archie/README.md",
@@ -191,7 +192,6 @@
     "themes/hugo-social-metadata/layouts",
     "themes/hugo-social-metadata/go.mod",
     "themes/hugo-social-metadata/LICENSE",
-    "themes/hugo-social-metadata",
     "themes/archie/static/fonts/roboto-mono-v12-latin-regular.svg",
     "themes/archie/static/fonts/ibm-plex-mono-v6-latin-500italic.svg",
     "themes/archie/static/fonts/fira-sans-v10-latin-regular.svg",
