@@ -8,7 +8,7 @@ description: "Guide to setting up a free, censorship-resistant proxy using Rende
 
 This is based on my censorship bypass guide. You may have heard me mention that I use Render for my VPN. This setup is built on top of the VLESS protocol developed by V2Ray — a highly effective protocol for bypassing censorship.
 
-Each instance has a 10GB limit, but you can delete and redeploy the instance to reset the limit. The code is obfuscated to avoid keyword detection enforced by Render. Since Render is a web hosting platform, governments blocking Render will block all sites hosted on it. However, if only your specific address is blocked, you can simply redeploy your instance to get a new domain name.
+Each instance has a 100GB limit, but you can delete and redeploy the instance to reset the limit. The code is obfuscated to avoid keyword detection enforced by Render. Since Render is a web hosting platform, governments blocking Render will block all sites hosted on it. However, if only your specific address is blocked, you can simply redeploy your instance to get a new domain name.
 
 Any email address should work, but if you're privacy-conscious, consider using a custom email. This also allows you to register multiple accounts. Make sure to sign up for Render using a **home IP address** — if they detect a datacenter IP, they may ask for a credit card.
 
