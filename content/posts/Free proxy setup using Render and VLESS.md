@@ -29,13 +29,13 @@ Any email address should work, but if you're privacy-conscious, consider using a
 
 6. Scroll down and click **"Add from .env"**
 7. Paste in the following environment variables:
-
+```
     DISCORD_WEBHOOK_URL=your Discord webhook
     PORT=443
     REFRESH_UUID_INTERVAL=300000
     SPEED_LIMIT_MBPS=200  # (Change if desired)
     UUID_LIST_URL=https://pastebin.com/raw/PASTEBIN_ID
-
+```
 
 1. You’ll need a list of UUIDs, one per line, hosted publicly (e.g., in Pastebin or a raw `.txt` file). Copy the **raw** URL and paste it into `UUID_LIST_URL`.
 2. Click **Deploy Web Service**
