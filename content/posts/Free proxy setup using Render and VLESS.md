@@ -50,6 +50,7 @@ You can use:
 - Nekoray (archived)
 - V2Box (Recommended for IOS)
 - V2RayN
+- V2rayNG (Recommended for Android)
 
 
 **Configuration:**
