@@ -46,9 +46,11 @@ Any email address should work, but if you're privacy-conscious, consider using a
 
 You can use:
 
-- Hiddify
+- Hiddify (Hard to configure)
 - Nekoray (archived)
+- V2Box (Recommended for IOS)
 - V2RayN
+
 
 **Configuration:**
 
